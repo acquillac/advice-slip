@@ -1,5 +1,5 @@
 document.getElementById('button').addEventListener('click', () => {
-    
+    // grabbing a random peice of advice
     fetch('https://api.adviceslip.com/advice')
     .then(response => response.json())
     .then(data => {
