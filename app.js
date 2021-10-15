@@ -6,7 +6,8 @@ document.getElementById('button1').addEventListener('click', () => {
         // console.log(data.slip.advice);
         const advice = data.slip.advice;
         document.getElementById('output').innerHTML = `<li>${advice}</li>`;
-    })    
+    })
+    .catch(document.getElementById('search-output').innerHTML = `Hmm something went wrong..`);   
 })
 
 
